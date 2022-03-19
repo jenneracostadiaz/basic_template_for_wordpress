@@ -1,0 +1,155 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* Now 10px = 1rem! */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  scroll-behavior: smooth;
+  outline: none;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-family: $fuentePrimaria;
+  background-color: $cBlanco;
+  color: $cNegro;
+}
+
+a {
+  text-decoration: none;
+  color: $cPrimario;
+  &:hover {
+    color: $cSecundario;
+    cursor: pointer;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 2rem 0;
+}
+
+h5,
+h6,
+p {
+  margin: 1rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input[type="submit"] {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.alignwide {
+  margin-left: 0px;
+  width: calc(100% + 50px);
+  max-width: calc(100% + 50px);
+}
+
+.alignfull {
+  margin-left: calc(-100vw / 2 + 100% / 2);
+  margin-right: calc(-100vw / 2 + 100% / 2);
+  max-width: 100vw;
+  width: auto;
+}
+
+.contenedor {
+  max-width: $desktop;
+  width: 90%;
+  margin: 0 auto;
+  @include fullDesktop() {
+    max-width: $fullDesktop;
+  }
+}
+
+.min-contenedor {
+  max-width: $laptop;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*** Config. Wordpress ***/
+.has-amarillo-color {
+  color: $cPrimario;
+}
+.has-morado-color {
+  color: $cSecundario;
+}
+.has-blanco-color {
+  color: $cBlanco;
+}
+.has-celeste-color {
+  color: $cTercero;
+}
+.has-gris-color {
+  color: $cGris;
+}
+.has-negro-color {
+  color: $cNegro;
+}
+.has-gris_claro-color {
+  color: $cGrisClaro;
+}
+.has-gris_light-color {
+  color: $cGrisLight;
+}
+
+.has-amarillo-background-color {
+  background-color: $cPrimario;
+}
+.has-morado-background-color {
+  background-color: $cSecundario;
+}
+.has-blanco-background-color {
+  background-color: $cBlanco;
+}
+.has-celeste-background-color {
+  background-color: $cTercero;
+}
+.has-gris-background-color {
+  background-color: $cGris;
+}
+.has-negro-background-color {
+  background-color: $cNegro;
+}
+.has-gris_claro-background-color {
+  background-color: $cGrisClaro;
+}
+.has-gris_light-background-color {
+  background-color: $cGrisLight;
+}

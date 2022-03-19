@@ -1,0 +1,79 @@
+/** Media Queries **/
+@mixin telefono {
+  @media only screen and (min-width: $telefono) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (min-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin fullDesktop {
+  @media only screen and (min-width: $fullDesktop) {
+    @content;
+  }
+}
+
+@mixin configBotones {
+  border-radius: $radius;
+  display: block;
+  padding: 1rem 2rem;
+  text-align: center;
+  transition: $transition;
+}
+
+@mixin boton-primario($color, $fondo, $hoverFondo) {
+  background: $fondo;
+  color: $color;
+  @include configBotones();
+  &:hover {
+    background: $hoverFondo;
+  }
+  &:focus {
+    background: $hoverFondo;
+    outline: 0.25rem solid rgba($fondo, 0.25);
+  }
+}
+@mixin boton-secundario($color, $hoverColor) {
+  background-color: transparent;
+  outline: 1px solid $color;
+  color: $color;
+  @include configBotones();
+  &:hover {
+    outline-color: $color;
+    background-color: $color;
+    color: $hoverColor;
+  }
+  &:focus {
+    background-color: $color;
+    color: $hoverColor;
+    outline: 0.25rem solid rgba($color, 0.25);
+  }
+}
+@mixin boton-tercero($color, $hoverFondo) {
+  background-color: transparent;
+  color: $color;
+  @include configBotones();
+  &:hover {
+    background-color: $hoverFondo;
+  }
+  &:focus {
+    background-color: $hoverFondo;
+    outline: 0.25rem solid rgba($color, 0.25);
+  }
+}

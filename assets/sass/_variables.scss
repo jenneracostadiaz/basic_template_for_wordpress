@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+//Fuentes
+$fuentePrimaria: "Roboto", sans-serif;
+$cPrimario: #f5c025;
+$cSecundario: #4208a8;
+$cTercero: #31bbf5;
+$cBlanco: #f5f5f5;
+$cNegro: #000000;
+$cGris: #1d1e1c;
+$cGrisClaro: #686868;
+$cGrisLight: #c9c9c9;
+
+//Globales
+$radius: 1rem;
+$radius-circle: 100%;
+$shadow: 0 0 30px rgba($cGris, 0.5);
+$shadow-active: 0 0 30px rgba($cGris, 0.95);
+$transition: all 0.5s ease;
+
+//Displays
+$telefono: 480px;
+$tablet: 768px;
+$laptop: 920px;
+$desktop: 1200px;
+$fullDesktop: 1440px;
