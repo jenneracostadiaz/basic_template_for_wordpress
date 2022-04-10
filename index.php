@@ -4,16 +4,16 @@ get_header();
 if ( have_posts() ) : 
     while ( have_posts() ) : the_post();
         ?>
-        <div class="contenedor">
+        <main class="contenedor">
             <?php 
                 the_title( '<h1>', '</h1>' ); 
                 the_content();
             ?>
-        </div>
+        </main>
         <?php
     endwhile;
 else :
-    _e( 'Disulpa, no encontramos lo que estás buscando...', 'treseca' );
+    get_template_part( 'template-parts/page', 'error' );
 endif;
  
 get_footer();
