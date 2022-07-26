@@ -104,52 +104,42 @@ input[type="submit"] {
 }
 
 /*** Config. Wordpress ***/
-.has-amarillo-color {
+.has-primario-color {
   color: $cPrimario;
 }
-.has-morado-color {
+
+.has-primario-background-color {
+  background-color: $cPrimario;
+}
+
+.has-secundario-color {
   color: $cSecundario;
 }
-.has-blanco-color {
-  color: $cBlanco;
+
+.has-secundario-background-color {
+  background-color: $cSecundario;
 }
-.has-celeste-color {
-  color: $cTercero;
-}
-.has-gris-color {
-  color: $cGris;
-}
+
 .has-negro-color {
   color: $cNegro;
 }
-.has-gris_claro-color {
-  color: $cGrisClaro;
-}
-.has-gris_light-color {
-  color: $cGrisLight;
-}
 
-.has-amarillo-background-color {
-  background-color: $cPrimario;
-}
-.has-morado-background-color {
-  background-color: $cSecundario;
-}
-.has-blanco-background-color {
-  background-color: $cBlanco;
-}
-.has-celeste-background-color {
-  background-color: $cTercero;
-}
-.has-gris-background-color {
-  background-color: $cGris;
-}
 .has-negro-background-color {
   background-color: $cNegro;
 }
+
+.has-gris_claro-color {
+  color: $cGrisClaro;
+}
+
 .has-gris_claro-background-color {
   background-color: $cGrisClaro;
 }
-.has-gris_light-background-color {
-  background-color: $cGrisLight;
+
+.has-blanco-color {
+  color: $cBlanco;
+}
+
+.has-blanco-background-color {
+  background-color: $cBlanco;
 }
